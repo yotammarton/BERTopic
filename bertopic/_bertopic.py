@@ -372,6 +372,7 @@ class BERTopic:
             embeddings = self._extract_embeddings(documents,
                                                   method="document",
                                                   verbose=self.verbose)
+            logger.info("Transformed documents to Embeddings")
 
         umap_embeddings = self.umap_model.transform(embeddings)
         logger.info("Reduced dimensionality with UMAP")
