@@ -34,7 +34,7 @@ from bertopic import plotting
 # Visualization
 import plotly.graph_objects as go
 
-logger = MyLogger("WARNING")
+logger = MyLogger("DEBUG")
 
 
 class BERTopic:
